@@ -1,3 +1,28 @@
-body {
-    background-color: aqua;
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.main-container {
+    width: 100%;
+    max-width: 768px;
+    padding: 0 17px;
+    box-sizing: border-box;
+  }
+
+/* font-variables */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subcoment {
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.small-title {
+  font-size: 18px;
+  font-weight: medium;
 }

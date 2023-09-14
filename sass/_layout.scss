@@ -1,0 +1,40 @@
+@import '_variables.scss';
+
+/***** header *****/
+
+.header-ohmyfood {
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: $header-dropshadow;
+
+  .logo {
+      width: 162px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+  }
+}
+
+/***** research & advertising *****/
+
+.research-and-advertising {
+    display: flex;
+    flex-direction: column;
+}
+
+/* advertising */
+.advertising {
+
+    height: 286px;
+    background-color: $lightgrey;
+
+    .advertising-title {
+        @extend .title;
+    }
+
+    .advertising-paragraph {
+        @extend .subcoment;
+        font-size: 18px;
+    }
+}
