@@ -1,3 +1,4 @@
+/* General */
 * {
   font-family: "Roboto", sans-serif;
   margin: 0px;
@@ -11,7 +12,7 @@
 }
 
 /* font-variables */
-.title, .advertising .advertising-title {
+.title, .fonctionnement .fonctionnement-title, .advertising .advertising-title {
   font-size: 24px;
   font-weight: bold;
 }
@@ -21,7 +22,7 @@
   font-weight: lighter;
 }
 
-.small-title, .big-button {
+.small-title, .big-button, .fonctionnement-card .fonctionnement-card-content {
   font-size: 18px;
   font-weight: medium;
 }
@@ -49,7 +50,7 @@
   width: 100%;
 }
 
-/* advertising */
+/** advertising **/
 .advertising {
   background-color: #f6f6f6;
   width: 100%;
@@ -57,8 +58,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 55px;
+  padding: 40px 20px 55px 20px;
 }
 .advertising .advertising-title {
   padding-bottom: 20px;
@@ -68,9 +68,58 @@
   padding-bottom: 30px;
 }
 
+/***** fonctionnement *****/
+.fonctionnement {
+  padding: 40px 20px;
+}
+.fonctionnement .fonctionnement-title {
+  padding-bottom: 30px;
+}
+.fonctionnement .fonctionnement-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.fonctionnement-card {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  align-items: center;
+}
+.fonctionnement-card .fonctionnement-card-number {
+  background-color: #9356DC;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -10px;
+  z-index: 1;
+}
+.fonctionnement-card .fonctionnement-card-content {
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 35px;
+}
+.fonctionnement-card .fonctionnement-card-content .fonctionnement-icon {
+  color: #7E7E7E;
+  padding-right: 25px;
+}
+
 /* color */
 /* drop-shadow */
-/* buttons */
+/** buttons **/
 .big-button {
   font-size: 16px;
   color: white;

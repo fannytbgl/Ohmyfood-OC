@@ -1,7 +1,6 @@
 @import '_variables.scss';
 
 /***** header *****/
-
 .header-ohmyfood {
   height: 63px;
   display: flex;
@@ -17,24 +16,22 @@
 }
 
 /***** research & advertising *****/
-
 .research-and-advertising {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-/* advertising */
+/** advertising **/
 .advertising {
 
-    background-color: $lightgrey;
+    background-color: $background;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 55px;
+    padding : 40px 20px 55px 20px;
 
     .advertising-title {
         @extend .title;
@@ -47,3 +44,60 @@
         padding-bottom: 30px;
     }
 }
+
+/***** fonctionnement *****/
+.fonctionnement {
+    padding: 40px 20px;
+
+    .fonctionnement-title {
+        @extend .title;
+        padding-bottom: 30px;
+    }
+
+    .fonctionnement-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+.fonctionnement-card {
+    display: flex;
+    flex-direction: row;
+    height: 72px;
+    align-items: center;
+
+    .fonctionnement-card-number {
+        background-color: $primary;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        font-size: 14px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -10px;
+        z-index: 1;
+    }
+
+    .fonctionnement-card-content {
+        @extend .small-title;
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $background;
+        box-shadow: $cards-dropshadow;
+        width: 100%;
+        border-radius: 20px;
+        padding-left: 35px;
+
+        .fonctionnement-icon {
+            color: $icon;
+            padding-right: 25px;
+        }
+    }
+}
+
