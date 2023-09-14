@@ -21,20 +21,29 @@
 .research-and-advertising {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /* advertising */
 .advertising {
 
-    height: 286px;
     background-color: $lightgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 55px;
 
     .advertising-title {
         @extend .title;
+        padding-bottom: 20px;
     }
 
     .advertising-paragraph {
         @extend .subcoment;
         font-size: 18px;
+        padding-bottom: 30px;
     }
 }
