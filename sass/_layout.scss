@@ -51,7 +51,7 @@
 
     .fonctionnement-title {
         @extend .title;
-        padding-bottom: 30px;
+        padding-bottom: 28px;
     }
 
     .fonctionnement-cards {
@@ -107,6 +107,13 @@
     flex-direction: column;
     background-color: $background;
     padding: 60px 20px;
+    gap: 28px;
+}
+
+.restaurants-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .restaurant-card {
