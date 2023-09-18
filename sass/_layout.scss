@@ -117,7 +117,6 @@
 }
 
 .restaurant-card {
-    text-decoration: none;
     color: black;
     background-color: white;
     display: flex;
@@ -169,3 +168,47 @@
     }
 }
 
+/***** footer *****/
+
+.footer-ohmyfood {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 40px;
+    gap: 7px;
+    color: white;
+    background-color: $grey;
+
+    .footer-logo {
+        width: 95px;
+        margin-bottom: 13px;
+        svg {
+            fill: white;
+        }
+    }
+
+    .footer-ul-partnership {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-size: 16px;
+
+        .footer-ul-partnership-li {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-weight: medium;
+        }
+        
+    }
+
+    .footer-ul-official {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        font-weight: lighter;
+    }
+
+    .footer-icon {
+        font-size: 13px;
+    }
+}

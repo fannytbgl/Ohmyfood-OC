@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* font-variables */
 .title, .fonctionnement .fonctionnement-title, .advertising .advertising-title {
   font-size: 24px;
@@ -133,7 +141,6 @@
 }
 
 .restaurant-card {
-  text-decoration: none;
   color: black;
   background-color: white;
   display: flex;
@@ -170,6 +177,44 @@
 .restaurant-card .restaurant-card-sub i {
   font-size: 22px;
   padding-top: -10px;
+}
+
+/***** footer *****/
+.footer-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 40px;
+  gap: 7px;
+  color: white;
+  background-color: #353535;
+}
+.footer-ohmyfood .footer-logo {
+  width: 95px;
+  margin-bottom: 13px;
+}
+.footer-ohmyfood .footer-logo svg {
+  fill: white;
+}
+.footer-ohmyfood .footer-ul-partnership {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 16px;
+}
+.footer-ohmyfood .footer-ul-partnership .footer-ul-partnership-li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-weight: medium;
+}
+.footer-ohmyfood .footer-ul-official {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: lighter;
+}
+.footer-ohmyfood .footer-icon {
+  font-size: 13px;
 }
 
 /* color */
