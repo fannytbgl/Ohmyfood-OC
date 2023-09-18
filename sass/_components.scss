@@ -6,9 +6,19 @@
     font-size: 16px;
     color: white;
     height: 50px;
-    background: linear-gradient(45deg,#9356DC, #FF79DA);
+    background: linear-gradient(45deg,$primary,$secondary);
     border-radius: 25px;
     padding: 0px 1.5em 0px 1.5em;
     border: none;
     box-shadow: $button-dropshadow;
  }
+
+.small-button {
+    font-size: 14px;
+    font-weight: medium;
+    background: $tertiary;
+    color: $tertiary-dark;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: $header-dropshadow;
+}
