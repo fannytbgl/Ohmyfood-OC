@@ -188,6 +188,17 @@ a {
   padding-top: -10px;
 }
 
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  .restaurants .restaurants-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurants .restaurants-cards .restaurant-card {
+    width: 700px;
+  }
+}
 /***** footer *****/
 .footer-ohmyfood {
   display: flex;
