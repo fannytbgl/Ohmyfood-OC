@@ -101,6 +101,20 @@
     }
 }
 
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+    .fonctionnement {
+        .fonctionnement-cards {
+            display: flex;
+            flex-direction: row;
+
+            .fonctionnement-card {
+                width: 33%;
+            }
+        }
+    }
+}
+
 /***** restaurants *****/
 .restaurants {
     display: flex;

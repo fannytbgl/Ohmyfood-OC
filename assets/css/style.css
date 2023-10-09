@@ -7,7 +7,6 @@
 
 .main-container {
   width: 100%;
-  max-width: 768px;
   box-sizing: border-box;
 }
 
@@ -125,6 +124,16 @@ a {
   padding-right: 25px;
 }
 
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (min-width: 1024px) {
+  .fonctionnement .fonctionnement-cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement .fonctionnement-cards .fonctionnement-card {
+    width: 33%;
+  }
+}
 /***** restaurants *****/
 .restaurants {
   display: flex;
