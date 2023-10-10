@@ -101,9 +101,10 @@
     }
 }
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .fonctionnement {
+        width: 1080px;
         .fonctionnement-cards {
             display: flex;
             flex-direction: row;
@@ -182,16 +183,18 @@
     }
 }
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .restaurants {
+        width: 1080px;
+
         .restaurants-cards {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
 
             .restaurant-card{
-                width: 700px;
+                width: 500px;
             }
         }
 
@@ -240,5 +243,21 @@
 
     .footer-icon {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-ohmyfood {
+        flex-direction: row-reverse;
+        padding: 60px 5% 30px ;
+
+        .footer-ul-partnership {
+            flex-direction: row;
+        }
+
+        .footer-ul-official {
+            flex-direction: row;
+        }
+
     }
 }
