@@ -285,7 +285,6 @@
 .restaurant-cart-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     background-color: $background;
     border-radius: 25px 25px 0px 0px;
@@ -299,6 +298,8 @@
 .restaurant-cart-menu-title-and-choice {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .restaurant-cart-menu-section {
@@ -320,5 +321,20 @@
             width: calc(40px); /* Calculate the width of the border */
             border-bottom: 3px solid $tertiary;
         }
+    }
+}
+
+.restaurant-cart-menu-article {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: $cards-dropshadow;
+
+    .restaurant-cart-menu-article-sub {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }

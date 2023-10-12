@@ -29,9 +29,19 @@ a {
   font-weight: lighter;
 }
 
+.subcoment-cart {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
 .small-title, .big-button, .restaurant-card .restaurant-card-sub h3, .fonctionnement-card .fonctionnement-card-content {
   font-size: 18px;
   font-weight: medium;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* color */
@@ -271,7 +281,6 @@ a {
 .restaurant-cart-menu {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
@@ -285,6 +294,7 @@ a {
 .restaurant-cart-menu-title-and-choice {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .restaurant-cart-menu-section {
@@ -305,6 +315,20 @@ a {
   left: 0; /* Adjust this value to control the starting position of the border */
   width: 40px; /* Calculate the width of the border */
   border-bottom: 3px solid #99E2D0;
+}
+
+.restaurant-cart-menu-article {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurant-cart-menu-article .restaurant-cart-menu-article-sub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* color */
