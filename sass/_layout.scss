@@ -104,11 +104,14 @@
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .fonctionnement {
-        width: 1080px;
+        
+        align-items: center;
+        width: 100%;
         
         .fonctionnement-cards {
             display: flex;
             flex-direction: row;
+            width: 1080px;
 
             .fonctionnement-card {
                 width: 33%;
@@ -187,9 +190,11 @@
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .restaurants {
-        width: 1080px;
+
+        align-items: center;
 
         .restaurants-cards {
+            width: 1080px;
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -260,5 +265,60 @@
             flex-direction: row;
         }
 
+    }
+}
+
+/***** restaurant cart banner *****/
+
+.restaurant-cart-banner {
+
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+    
+}
+
+/***** restaurant cart menu *****/
+
+.restaurant-cart-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $background;
+    border-radius: 25px 25px 0px 0px;
+    padding: 40px 10px;
+    margin-top: -40px;
+    z-index: 1;
+    position: relative;
+    gap: 40px;
+}
+
+.restaurant-cart-menu-title-and-choice {
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurant-cart-menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .restaurant-cart-menu-section-title {
+        font-size: 16px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0; /* Adjust this value to control the starting position of the border */
+            width: calc(40px); /* Calculate the width of the border */
+            border-bottom: 3px solid $tertiary;
+        }
     }
 }
