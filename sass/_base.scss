@@ -7,8 +7,17 @@
   
 .main-container {
     width: 100%;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+.second-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media (min-width: 1024px) {
 }
@@ -25,6 +34,11 @@ a {
 .title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.restaurant-cart-menu-title {
+  font-family: 'Shrikhand', serif;
+  font-size: 28px;
 }
 
 .subcoment {

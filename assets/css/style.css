@@ -7,7 +7,16 @@
 
 .main-container {
   width: 100%;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 li {
@@ -22,6 +31,11 @@ a {
 .title, .fonctionnement .fonctionnement-title, .advertising .advertising-title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.restaurant-cart-menu-title {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
 }
 
 .subcoment, .restaurant-card .restaurant-card-sub p, .advertising .advertising-paragraph {
@@ -53,6 +67,7 @@ a {
   flex-direction: row;
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
 }
 .header-ohmyfood .logo {
   width: 162px;
@@ -70,7 +85,6 @@ a {
 /** advertising **/
 .advertising {
   background-color: #f6f6f6;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +101,10 @@ a {
 
 /***** fonctionnement *****/
 .fonctionnement {
+  display: flex;
+  flex-direction: column;
   padding: 40px 20px;
+  width: 100%;
 }
 .fonctionnement .fonctionnement-title {
   padding-bottom: 28px;
@@ -138,7 +155,6 @@ a {
 @media (min-width: 1024px) {
   .fonctionnement {
     align-items: center;
-    width: 100%;
   }
   .fonctionnement .fonctionnement-cards {
     display: flex;
@@ -156,6 +172,7 @@ a {
   background-color: #f6f6f6;
   padding: 60px 20px;
   gap: 28px;
+  width: 100%;
 }
 
 .restaurants-cards {
@@ -205,9 +222,6 @@ a {
 
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
-  .restaurants {
-    align-items: center;
-  }
   .restaurants .restaurants-cards {
     width: 1080px;
     flex-direction: row;
@@ -226,6 +240,7 @@ a {
   gap: 7px;
   color: white;
   background-color: #353535;
+  width: 100%;
 }
 .footer-ohmyfood .footer-logo {
   width: 95px;
@@ -284,11 +299,15 @@ a {
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0px 0px;
-  padding: 40px 10px;
+  padding: 40px 12px;
   margin-top: -40px;
   z-index: 1;
   position: relative;
   gap: 40px;
+}
+.restaurant-cart-menu .restaurant-cart-menu-big-button {
+  width: 186px;
+  align-self: center;
 }
 
 .restaurant-cart-menu-title-and-choice {
@@ -312,8 +331,8 @@ a {
   content: "";
   position: absolute;
   bottom: -5px;
-  left: 0; /* Adjust this value to control the starting position of the border */
-  width: 40px; /* Calculate the width of the border */
+  left: 0;
+  width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
 
