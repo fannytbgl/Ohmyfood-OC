@@ -36,6 +36,7 @@ a {
 .restaurant-cart-menu-title {
   font-family: "Shrikhand", serif;
   font-size: 28px;
+  padding-right: 28px;
 }
 
 .subcoment, .restaurant-card .restaurant-card-sub p, .advertising .advertising-paragraph {
@@ -350,6 +351,16 @@ a {
   justify-content: space-between;
 }
 
+/* Medium devices (tablets, more/equal than 1024px) */
+@media (min-width: 1024px) {
+  .restaurant-cart-menu {
+    width: 1055px;
+    align-items: center;
+  }
+  .restaurant-cart-menu .restaurant-cart-menu-section {
+    width: 684px;
+  }
+}
 /* color */
 /* drop-shadow */
 /** buttons **/
