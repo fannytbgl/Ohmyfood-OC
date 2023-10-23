@@ -51,6 +51,7 @@
     flex-direction: column;
     padding: 40px 20px;
     width: 100%;
+    align-self: center;
 
     .fonctionnement-title {
         @extend .title;
@@ -193,6 +194,9 @@
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .restaurants {
+
+        align-items: center;
+        justify-content: center;
 
         .restaurants-cards {
             width: 1080px;
