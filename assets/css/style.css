@@ -67,6 +67,43 @@ a {
 
 /* color */
 /* drop-shadow */
+/* animations */
+.fadein1 {
+  animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein2 {
+  animation: fade-in 2s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein3 {
+  animation: fade-in 3s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /***** header *****/
 .header-ohmyfood {
   height: 63px;
@@ -332,6 +369,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  opacity: 0;
 }
 .restaurant-cart-menu-section .restaurant-cart-menu-section-title {
   font-size: 16px;
@@ -374,6 +412,43 @@ a {
 }
 /* color */
 /* drop-shadow */
+/* animations */
+.fadein1 {
+  animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein2 {
+  animation: fade-in 2s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein3 {
+  animation: fade-in 3s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /** buttons **/
 .big-button {
   font-size: 16px;
@@ -403,5 +478,41 @@ a {
 
 /* color */
 /* drop-shadow */
+/* animations */
+.fadein1 {
+  animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein2 {
+  animation: fade-in 2s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadein3 {
+  animation: fade-in 3s ease-in-out forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

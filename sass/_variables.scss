@@ -12,3 +12,43 @@ $button-dropshadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 $button-dropshadow-enhanced: 0px 6px 12px 0px rgba(0, 0, 0, 0.30);
 $header-dropshadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+/* animations */
+.fadein1 {
+    animation: fade-in 1s ease-in-out forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+    }
+}
+
+.fadein2 {
+    animation: fade-in 2s ease-in-out forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+    }
+}
+
+.fadein3 {
+    animation: fade-in 3s ease-in-out forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+    }
+}
