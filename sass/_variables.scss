@@ -15,7 +15,7 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
 /* animations */
 .fadein1 {
-    animation: fade-in 1s ease-in-out forwards;
+    animation: fade-in 1.5s ease-in-out forwards;
 
     @keyframes fade-in {
         from {
@@ -28,7 +28,7 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .fadein2 {
-    animation: fade-in 2s ease-in-out forwards;
+    animation: fade-in 3.5s ease-in-out forwards;
 
     @keyframes fade-in {
         from {
@@ -41,7 +41,7 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .fadein3 {
-    animation: fade-in 3s ease-in-out forwards;
+    animation: fade-in 4s ease-in-out forwards;
 
     @keyframes fade-in {
         from {
