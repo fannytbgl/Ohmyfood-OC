@@ -398,6 +398,10 @@ a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: margin-right 500ms;
+}
+.restaurant-cart-menu-article:hover {
+  margin-right: 10%;
 }
 .restaurant-cart-menu-article .restaurant-cart-menu-article-sub {
   display: flex;
@@ -481,6 +485,7 @@ a {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+/**loader**/
 /* color */
 /* drop-shadow */
 /* animations */

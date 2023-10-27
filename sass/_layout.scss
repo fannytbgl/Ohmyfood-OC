@@ -350,6 +350,11 @@
     background-color: white;
     border-radius: 15px;
     box-shadow: $cards-dropshadow;
+    transition: margin-right 500ms;
+
+    &:hover {
+        margin-right: 10%;
+    }
 
     .restaurant-cart-menu-article-sub {
         display: flex;
