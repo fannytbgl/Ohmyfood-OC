@@ -43,6 +43,7 @@ a {
   font-family: "Shrikhand", serif;
   font-size: 18px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .subcoment, .restaurant-card .restaurant-card-sub p, .advertising .advertising-paragraph {
@@ -105,7 +106,7 @@ a {
 }
 
 .fadeout {
-  animation: fade-out 5s linear forwards;
+  animation: fade-out 3s linear forwards;
 }
 @keyframes fade-out {
   from {
@@ -471,7 +472,7 @@ a {
 }
 
 .fadeout {
-  animation: fade-out 5s linear forwards;
+  animation: fade-out 3s linear forwards;
 }
 @keyframes fade-out {
   from {
@@ -590,7 +591,7 @@ a {
 }
 
 .fadeout {
-  animation: fade-out 5s linear forwards;
+  animation: fade-out 3s linear forwards;
 }
 @keyframes fade-out {
   from {
