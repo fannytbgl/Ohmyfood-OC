@@ -191,9 +191,26 @@
             @extend .subcoment;
         }
 
-        i {
-            font-size: 22px;
+        .favorite {
+            height: 22px;
             padding-top: -10px;
+            fill: transparent;
+            stroke-width: 40;
+            stroke: black;
+
+            &:hover {
+            animation: filling 0.25s linear forwards;
+            @keyframes filling {
+    
+            from {
+            fill: transparent;
+            }
+  
+            to { 
+            fill: black;
+            }
+  }
+            }
         }
     }
 }
@@ -272,10 +289,14 @@
 
         .footer-ul-partnership {
             flex-direction: row;
+            order : 2;
+            padding-right: 40px;
         }
 
         .footer-ul-official {
             flex-direction: row;
+            order : 1;
+            padding-right: 80px;
         }
 
     }

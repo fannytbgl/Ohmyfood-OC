@@ -9,14 +9,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.second-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
 }
 
 li {
@@ -278,9 +271,23 @@ a {
   padding: 0px 20px 0px 10px;
   border-radius: 0px 0px 15px 15px;
 }
-.restaurant-card .restaurant-card-sub i {
-  font-size: 22px;
+.restaurant-card .restaurant-card-sub .favorite {
+  height: 22px;
   padding-top: -10px;
+  fill: transparent;
+  stroke-width: 40;
+  stroke: black;
+}
+.restaurant-card .restaurant-card-sub .favorite:hover {
+  animation: filling 0.25s linear forwards;
+}
+@keyframes filling {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
 }
 
 /* Medium devices (tablets, more/equal than 1024px) */
@@ -345,9 +352,13 @@ a {
   }
   .footer-ohmyfood .footer-ul-partnership {
     flex-direction: row;
+    order: 2;
+    padding-right: 40px;
   }
   .footer-ohmyfood .footer-ul-official {
     flex-direction: row;
+    order: 1;
+    padding-right: 80px;
   }
 }
 /***** restaurant cart banner *****/
