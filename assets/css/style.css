@@ -132,7 +132,6 @@ a {
   width: 162px;
   padding-top: 20px;
   padding-bottom: 10px;
-  margin-right: auto;
 }
 
 /***** research & advertising *****/
@@ -414,6 +413,7 @@ a {
 }
 
 .restaurant-cart-menu-article {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 12px;
@@ -424,11 +424,21 @@ a {
 }
 .restaurant-cart-menu-article:hover {
   margin-right: 10%;
+  border-radius: 15px 0px 0px 15px;
+}
+.restaurant-cart-menu-article:hover .checking {
+  display: block;
 }
 .restaurant-cart-menu-article .restaurant-cart-menu-article-sub {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.restaurant-cart-menu-article .checking {
+  display: none;
+  width: 59px;
+  background-color: #99E2D0;
+  margin-right: -13%;
 }
 
 /* Medium devices (tablets, more/equal than 1024px) */
