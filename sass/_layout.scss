@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   box-shadow: $header-dropshadow;
   width: 100%;
   
@@ -116,12 +116,11 @@
 @media (min-width: 1024px) {
     .fonctionnement {
         
-        align-items: center;
+        width: 100%;
         
         .fonctionnement-cards {
             display: flex;
             flex-direction: row;
-            width: 1080px;
 
             .fonctionnement-card {
                 width: 33%;
@@ -219,13 +218,9 @@
 @media (min-width: 1024px) {
     .restaurants {
 
-        align-items: center;
-        justify-content: center;
-
         .restaurants-cards {
-            width: 1080px;
+            
             flex-direction: row;
-            justify-content: space-between;
             flex-wrap: wrap;
 
             .restaurant-card{
