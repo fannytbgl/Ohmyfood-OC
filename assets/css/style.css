@@ -127,11 +127,17 @@ a {
 }
 .header-ohmyfood .header-arrow {
   font-size: 16px;
+  width: 5%;
+  margin-left: 5%;
 }
-.header-ohmyfood .logo {
+.header-ohmyfood .logo-part {
+  width: 90%;
+}
+.header-ohmyfood .logo-part .logo {
   width: 162px;
   padding-top: 20px;
   padding-bottom: 10px;
+  margin-left: 38%;
 }
 
 /***** research & advertising *****/
