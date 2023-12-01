@@ -19,14 +19,18 @@
 
   .logo-part {
     width: 90%;
-
-    .logo {
-        width: 162px;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin-left: 38%;
-    }
   }
+
+  .logo {
+    width: 162px;
+    padding-top: 20px;
+    padding-bottom: 10px;   
+}
+
+.logo-restaurant {
+    @extend .logo;
+    margin-left: 38%;
+}
   
 }
 

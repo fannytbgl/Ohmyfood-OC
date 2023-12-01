@@ -133,10 +133,12 @@ a {
 .header-ohmyfood .logo-part {
   width: 90%;
 }
-.header-ohmyfood .logo-part .logo {
+.header-ohmyfood .logo, .header-ohmyfood .logo-restaurant {
   width: 162px;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+.header-ohmyfood .logo-restaurant {
   margin-left: 38%;
 }
 
