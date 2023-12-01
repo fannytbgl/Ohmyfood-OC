@@ -65,6 +65,12 @@
 
 /***** fonctionnement *****/
 .fonctionnement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fonctionnement-box {
     display: flex;
     flex-direction: column;
     padding: 40px 20px;
@@ -125,9 +131,9 @@
 
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
-    .fonctionnement {
+    .fonctionnement-box {
         
-        width: 100%;
+        width: 1080px;
         
         .fonctionnement-cards {
             display: flex;
@@ -141,10 +147,17 @@
 }
 
 /***** restaurants *****/
+
 .restaurants {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $background;
+}
+
+.restaurants-box {
     display: flex;
     flex-direction: column;
-    background-color: $background;
     padding: 60px 20px;
     gap: 28px;
     width: 100%;
@@ -228,18 +241,26 @@
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
     .restaurants {
-
-        .restaurants-cards {
-            
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .restaurant-card{
-                width: 500px;
-            }
-        }
-
+        
+        width: 4000px;
     }
+
+    .restaurants-box {
+        width: 1080px;
+    }
+
+    .restaurants-cards {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+
+        .restaurant-card{
+            width: 500px;
+        }
+    }
+
 }
 
 /***** footer *****/
