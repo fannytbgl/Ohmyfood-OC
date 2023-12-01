@@ -115,6 +115,25 @@ a {
   }
 }
 
+.favorite {
+  height: 22px;
+  padding-top: -10px;
+  fill: transparent;
+  stroke-width: 40;
+  stroke: black;
+}
+.favorite:hover {
+  animation: filling 0.25s linear forwards;
+}
+@keyframes filling {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
+}
+
 /***** header *****/
 .header-ohmyfood {
   height: 63px;
@@ -294,25 +313,6 @@ a {
   padding: 0px 20px 0px 10px;
   border-radius: 0px 0px 15px 15px;
 }
-.restaurant-card .restaurant-card-sub .favorite {
-  height: 22px;
-  padding-top: -10px;
-  fill: transparent;
-  stroke-width: 40;
-  stroke: black;
-}
-.restaurant-card .restaurant-card-sub .favorite:hover {
-  animation: filling 0.25s linear forwards;
-}
-@keyframes filling {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: black;
-  }
-}
-
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
   .restaurants {
@@ -417,6 +417,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .restaurant-cart-menu-section {
@@ -527,6 +528,25 @@ a {
   }
   to {
     display: none;
+  }
+}
+
+.favorite {
+  height: 22px;
+  padding-top: -10px;
+  fill: transparent;
+  stroke-width: 40;
+  stroke: black;
+}
+.favorite:hover {
+  animation: filling 0.25s linear forwards;
+}
+@keyframes filling {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
   }
 }
 
@@ -646,6 +666,25 @@ a {
   }
   to {
     display: none;
+  }
+}
+
+.favorite {
+  height: 22px;
+  padding-top: -10px;
+  fill: transparent;
+  stroke-width: 40;
+  stroke: black;
+}
+.favorite:hover {
+  animation: filling 0.25s linear forwards;
+}
+@keyframes filling {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
   }
 }
 

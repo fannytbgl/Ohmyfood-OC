@@ -213,28 +213,6 @@
         p {
             @extend .subcoment;
         }
-
-        .favorite {
-            height: 22px;
-            padding-top: -10px;
-            fill: transparent;
-            stroke-width: 40;
-            stroke: black;
-
-            &:hover {
-            animation: filling 0.25s linear forwards;
-            @keyframes filling {
-    
-            from {
-            fill: transparent;
-            }
-  
-            to { 
-            fill: black;
-            }
-  }
-            }
-        }
     }
 }
 
@@ -365,6 +343,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
 }
 
