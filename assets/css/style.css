@@ -316,7 +316,7 @@ a {
 /* Medium devices (tablets, more/equal than 1024px) */
 @media (min-width: 1024px) {
   .restaurants {
-    width: 4000px;
+    width: 100%;
   }
   .restaurants-box {
     width: 1080px;
@@ -441,33 +441,44 @@ a {
   border-bottom: 3px solid #99E2D0;
 }
 
+.test-animation {
+  display: flex;
+  flex-direction: row;
+}
+.test-animation .checking {
+  display: none;
+  width: 10%;
+  color: white;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+}
+.test-animation:hover .checking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10%;
+  z-index: 0;
+}
+.test-animation:hover .restaurant-cart-menu-article {
+  border-radius: 15px 0px 0px 15px;
+  margin-right: 10%;
+  z-index: 1;
+}
+
 .restaurant-cart-menu-article {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding: 12px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
   transition: margin-right 500ms;
-}
-.restaurant-cart-menu-article:hover {
-  margin-right: 10%;
-  border-radius: 15px 0px 0px 15px;
-}
-.restaurant-cart-menu-article:hover .checking {
-  display: block;
 }
 .restaurant-cart-menu-article .restaurant-cart-menu-article-sub {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.restaurant-cart-menu-article .checking {
-  display: none;
-  width: 59px;
-  background-color: #99E2D0;
-  margin-right: -13%;
 }
 
 /* Medium devices (tablets, more/equal than 1024px) */
