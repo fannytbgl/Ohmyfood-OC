@@ -441,25 +441,25 @@ a {
   border-bottom: 3px solid #99E2D0;
 }
 
-.test-animation {
+.restaurant-cart-menu-article-and-checking {
   display: flex;
   flex-direction: row;
 }
-.test-animation .checking {
+.restaurant-cart-menu-article-and-checking .checking {
   display: none;
   width: 10%;
   color: white;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
 }
-.test-animation:hover .checking {
+.restaurant-cart-menu-article-and-checking:hover .checking {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: -10%;
   z-index: 0;
 }
-.test-animation:hover .restaurant-cart-menu-article {
+.restaurant-cart-menu-article-and-checking:hover .restaurant-cart-menu-article {
   border-radius: 15px 0px 0px 15px;
   margin-right: 10%;
   z-index: 1;
