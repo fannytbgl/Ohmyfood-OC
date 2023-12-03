@@ -251,6 +251,7 @@
     color: white;
     background-color: $grey;
     width: 100%;
+    padding-left: 20px;
 
     .footer-logo {
         width: 95px;
@@ -290,7 +291,8 @@
 @media (min-width: 1024px) {
     .footer-ohmyfood {
         flex-direction: row-reverse;
-        padding: 60px 5% 30px ;
+        padding-top: 60px;
+        padding-bottom: 25px;
 
         .footer-ul-partnership {
             flex-direction: row;
@@ -304,6 +306,9 @@
             padding-right: 80px;
         }
 
+        .footer-title {
+            padding-right: 60px;
+        }
     }
 }
 

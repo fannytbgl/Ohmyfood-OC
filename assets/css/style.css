@@ -344,6 +344,7 @@ a {
   color: white;
   background-color: #353535;
   width: 100%;
+  padding-left: 20px;
 }
 .footer-ohmyfood .footer-logo {
   width: 95px;
@@ -377,7 +378,8 @@ a {
 @media (min-width: 1024px) {
   .footer-ohmyfood {
     flex-direction: row-reverse;
-    padding: 60px 5% 30px;
+    padding-top: 60px;
+    padding-bottom: 25px;
   }
   .footer-ohmyfood .footer-ul-partnership {
     flex-direction: row;
@@ -388,6 +390,9 @@ a {
     flex-direction: row;
     order: 1;
     padding-right: 80px;
+  }
+  .footer-ohmyfood .footer-title {
+    padding-right: 60px;
   }
 }
 /***** restaurant cart banner *****/
