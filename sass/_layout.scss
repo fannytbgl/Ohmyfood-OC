@@ -19,6 +19,7 @@
 
   .logo-part {
     width: 90%;
+    text-align: center;
   }
 
   .logo {
@@ -29,7 +30,6 @@
 
 .logo-restaurant {
     @extend .logo;
-    margin-left: 38%;
 }
   
 }

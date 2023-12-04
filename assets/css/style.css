@@ -27,6 +27,7 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /* font-variables */
@@ -155,16 +156,13 @@ a {
 }
 .header-ohmyfood .logo-part {
   width: 90%;
+  text-align: center;
 }
 .header-ohmyfood .logo, .header-ohmyfood .logo-restaurant {
   width: 162px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.header-ohmyfood .logo-restaurant {
-  margin-left: 38%;
-}
-
 /***** research & advertising *****/
 .research-and-advertising {
   display: flex;
@@ -335,14 +333,6 @@ a {
     width: 500px;
   }
 }
-
-@media only screen and (min-width: 1024px) and (max-width: 1089px) {
-  .restaurants-cards .restaurant-card {
-    width: 460px;
-  }
-}
-
-
 /***** footer *****/
 .footer-ohmyfood {
   display: flex;
