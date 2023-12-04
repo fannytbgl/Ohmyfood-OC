@@ -156,14 +156,14 @@ a {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   gap: 15px;
   color: #353535;
 }
 .location .input-location {
   font-size: 16px;
   border: none;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   width: 115px;
 }
 .location .input-location::placeholder {
@@ -224,7 +224,7 @@ a {
   align-items: center;
 }
 .fonctionnement-card .fonctionnement-card-number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   height: 24px;
   width: 24px;
   border-radius: 50%;
@@ -249,7 +249,7 @@ a {
   padding-left: 35px;
 }
 .fonctionnement-card .fonctionnement-card-content .fonctionnement-icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
   padding-right: 25px;
 }
 
@@ -393,7 +393,7 @@ a {
   bottom: -5px;
   left: 0;
   width: 40px;
-  border-bottom: 3px solid #99E2D0;
+  border-bottom: 3px solid #99e2d0;
 }
 
 .restaurant-cart-menu-article-and-checking {
@@ -404,7 +404,7 @@ a {
   display: none;
   width: 10%;
   color: white;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 0px 15px 15px 0px;
 }
 .restaurant-cart-menu-article-and-checking:hover .checking {
@@ -654,7 +654,7 @@ a {
   font-size: 16px;
   color: white;
   height: 50px;
-  background: linear-gradient(45deg, #9356DC, #FF79DA);
+  background: linear-gradient(45deg, #9356dc, #ff79da);
   border-radius: 25px;
   padding: 0px 1.5em 0px 1.5em;
   border: none;
@@ -670,7 +670,7 @@ a {
 .small-button {
   font-size: 14px;
   font-weight: medium;
-  background: #99E2D0;
+  background: #99e2d0;
   color: #008766;
   padding: 5px 10px;
   border: none;

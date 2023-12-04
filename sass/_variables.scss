@@ -1,16 +1,16 @@
 /***** color *****/
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
 $tertiary-dark: #008766;
 $background: #f6f6f6;
 $grey: #353535;
-$icon: #7E7E7E;
-$location: #EAEAEA;
+$icon: #7e7e7e;
+$location: #eaeaea;
 
 /***** drop-shadow *****/
 $button-dropshadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-$button-dropshadow-enhanced: 0px 6px 12px 0px rgba(0, 0, 0, 0.30);
+$button-dropshadow-enhanced: 0px 6px 12px 0px rgba(0, 0, 0, 0.3);
 $header-dropshadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
@@ -21,13 +21,13 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 .restaurant-cart-menu-title {
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
   font-size: 28px;
   padding-right: 28px;
 }
 
 .footer-title {
-  font-family: 'Shrikhand', serif;
+  font-family: "Shrikhand", serif;
   font-size: 18px;
   color: white;
   margin-bottom: 10px;
@@ -55,49 +55,48 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
 /***** animations *****/
 .fadein1 {
-    animation: fade-in 1.5s ease-in-out forwards;
+  animation: fade-in 1.5s ease-in-out forwards;
 
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .fadein2 {
-    animation: fade-in 3.5s ease-in-out forwards;
+  animation: fade-in 3.5s ease-in-out forwards;
 
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .fadein3 {
-    animation: fade-in 4s ease-in-out forwards;
+  animation: fade-in 4s ease-in-out forwards;
 
-    @keyframes fade-in {
-        from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .fadeout {
   animation: fade-out 3s linear forwards;
 
   @keyframes fade-out {
-
     from {
       display: flex;
     }
@@ -105,7 +104,6 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     to {
       display: none;
     }
-    
   }
 }
 
@@ -116,17 +114,16 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   stroke: black;
 
   &:hover {
-  animation: filling 0.25s linear forwards;
+    animation: filling 0.25s linear forwards;
   }
 
   @keyframes filling {
-
     from {
-    fill: transparent;
+      fill: transparent;
     }
-  
-    to { 
-    fill: black;
+
+    to {
+      fill: black;
     }
   }
 
@@ -135,16 +132,12 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
 
   @keyframes unfilling {
-
     from {
-        fill: black;
+      fill: black;
     }
 
-    to { 
-        fill: transparent;
+    to {
+      fill: transparent;
     }
   }
-
 }
-
-

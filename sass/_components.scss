@@ -1,220 +1,213 @@
-@import '_variables.scss';
+@import "_variables.scss";
 
 /***** header *****/
 .header-ohmyfood {
-    height: 63px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    box-shadow: $header-dropshadow;
-    width: 100%;
-    
-  
-    .header-arrow {
-      font-size: 16px;
-      width: 5%;
-      margin-left: 5%;
-    }
-  
-    .logo-part {
-      width: 90%;
-      text-align: center;
-    }
-  
-    .logo {
-      width: 162px;
-      padding-top: 20px;
-      padding-bottom: 10px;   
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $header-dropshadow;
+  width: 100%;
+
+  .header-arrow {
+    font-size: 16px;
+    width: 5%;
+    margin-left: 5%;
   }
-  
+
+  .logo-part {
+    width: 90%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 162px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
   .logo-restaurant {
-      @extend .logo;
+    @extend .logo;
   }
-    
-  }
+}
 
 /***** footer *****/
 .footer-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0px;
+  gap: 7px;
+  color: white;
+  background-color: $grey;
+  width: 100%;
+  padding-left: 20px;
+
+  .footer-logo {
+    width: 95px;
+    margin-bottom: 13px;
+    svg {
+      fill: white;
+    }
+  }
+
+  .footer-ul-partnership {
     display: flex;
     flex-direction: column;
-    padding: 28px 0px;
     gap: 7px;
-    color: white;
-    background-color: $grey;
-    width: 100%;
-    padding-left: 20px;
+    font-size: 16px;
 
-    .footer-logo {
-        width: 95px;
-        margin-bottom: 13px;
-        svg {
-            fill: white;
-        }
+    .footer-ul-partnership-li {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      font-weight: medium;
     }
+  }
 
-    .footer-ul-partnership {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        font-size: 16px;
+  .footer-ul-official {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-weight: lighter;
+  }
 
-        .footer-ul-partnership-li {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            font-weight: medium;
-        }
-        
-    }
-
-    .footer-ul-official {
-        display: flex;
-        flex-direction: column;
-        gap: 7px;
-        font-weight: lighter;
-    }
-
-    .footer-icon {
-        font-size: 13px;
-    }
+  .footer-icon {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .footer-ohmyfood {
-        flex-direction: row-reverse;
-        padding-top: 60px;
-        padding-bottom: 25px;
+  .footer-ohmyfood {
+    flex-direction: row-reverse;
+    padding-top: 60px;
+    padding-bottom: 25px;
 
-        .footer-ul-partnership {
-            flex-direction: row;
-            order : 2;
-            padding-right: 40px;
-        }
-
-        .footer-ul-official {
-            flex-direction: row;
-            order : 1;
-            padding-right: 80px;
-        }
-
-        .footer-title {
-            padding-right: 60px;
-        }
+    .footer-ul-partnership {
+      flex-direction: row;
+      order: 2;
+      padding-right: 40px;
     }
+
+    .footer-ul-official {
+      flex-direction: row;
+      order: 1;
+      padding-right: 80px;
+    }
+
+    .footer-title {
+      padding-right: 60px;
+    }
+  }
 }
 
 /***** buttons *****/
 .big-button {
-    @extend .small-title;
-    font-size: 16px;
-    color: white;
-    height: 50px;
-    background: linear-gradient(45deg,$primary,$secondary);
-    border-radius: 25px;
-    padding: 0px 1.5em 0px 1.5em;
-    border: none;
-    box-shadow: $button-dropshadow;
-    transition: opacity 0.5s, box-shadow 0.5s;
+  @extend .small-title;
+  font-size: 16px;
+  color: white;
+  height: 50px;
+  background: linear-gradient(45deg, $primary, $secondary);
+  border-radius: 25px;
+  padding: 0px 1.5em 0px 1.5em;
+  border: none;
+  box-shadow: $button-dropshadow;
+  transition: opacity 0.5s, box-shadow 0.5s;
 
-    
-
-    &:hover {
-        box-shadow: $button-dropshadow-enhanced;
-        opacity: 0.7;
-        transition: box-shadow 0.5s, opacity 0.5s;
-    }
-
+  &:hover {
+    box-shadow: $button-dropshadow-enhanced;
+    opacity: 0.7;
+    transition: box-shadow 0.5s, opacity 0.5s;
+  }
 }
 
 .small-button {
-    font-size: 14px;
-    font-weight: medium;
-    background: $tertiary;
-    color: $tertiary-dark;
-    padding: 5px 10px;
-    border: none;
-    box-shadow: $header-dropshadow;
+  font-size: 14px;
+  font-weight: medium;
+  background: $tertiary;
+  color: $tertiary-dark;
+  padding: 5px 10px;
+  border: none;
+  box-shadow: $header-dropshadow;
 }
-
 
 /*****loader*****/
 .loader-box {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+
+  .loader {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 8px solid rgba($color: black, $alpha: 0.4);
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      bottom: -8px;
+      right: -8px;
+      border-radius: 30px;
+      border: 8px solid transparent;
+      border-top-color: black;
+      animation: spin 1s linear infinite;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Medium devices (tablets, more/equal than 768px) */
+@media (min-width: 768px) {
+  .loader-box {
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Shrikhand', serif;
-    font-size: 30px;
-    
+    font-family: "Shrikhand", serif;
+    font-size: 50px;
+
     .loader {
-        position: relative;
-        width: 18px;
-        height: 18px;
-        display: inline-block;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 30px;
+      border: 10px solid rgba($color: black, $alpha: 0.4);
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        bottom: -10px;
+        right: -10px;
         border-radius: 30px;
-        border: 8px solid rgba($color: black, $alpha: 0.4);
-        margin-right: 8px;
-        margin-bottom: 8px;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: -8px; 
-            left: -8px;
-            bottom: -8px;
-            right: -8px;
-            border-radius: 30px;
-            border: 8px solid transparent;
-            border-top-color : black;
-            animation: spin 1s linear infinite;
-        }
+        border: 10px solid transparent;
+        border-top-color: black;
+        animation: spin 1s linear infinite;
+      }
     }
-}
-
-@keyframes spin {
-    0%{ transform: rotate(0deg);}
-    100%{ transform: rotate(360deg);}
-}
-
-/* Medium devices (tablets, more/equal than 768px) */
-@media (min-width: 768px) {
-    .loader-box {
-
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Shrikhand', serif;
-        font-size: 50px;
-        
-        .loader {
-            position: relative;
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-            border-radius: 30px;
-            border: 10px solid rgba($color: black, $alpha: 0.4);
-            margin-right: 10px;
-            margin-bottom: 10px;
-    
-    
-            &::after {
-                content: '';
-                position: absolute;
-                top: -10px;
-                left: -10px;
-                bottom: -10px;
-                right: -10px;
-                border-radius: 30px;
-                border: 10px solid transparent;
-                border-top-color : black;
-                animation: spin 1s linear infinite;
-            }
-    
-
-    }
-}
+  }
 }
