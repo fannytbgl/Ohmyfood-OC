@@ -71,24 +71,40 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
 .favorite {
   height: 22px;
-  padding-top: -10px;
   fill: transparent;
   stroke-width: 40;
   stroke: black;
 
   &:hover {
   animation: filling 0.25s linear forwards;
+  }
+
   @keyframes filling {
 
-  from {
-  fill: transparent;
+    from {
+    fill: transparent;
+    }
+  
+    to { 
+    fill: black;
+    }
   }
 
-  to { 
-  fill: black;
+  &:not(:hover) {
+    animation: unfilling 0.25s linear forwards;
   }
-}
+
+  @keyframes unfilling {
+    
+    from {
+        fill: black;
+    }
+
+    to { 
+        fill: transparent;
+    }
   }
+
 }
 
 

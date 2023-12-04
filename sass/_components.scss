@@ -18,6 +18,7 @@
     &:hover {
         box-shadow: $button-dropshadow-enhanced;
         opacity: 0.7;
+        transition: box-shadow 0.5s, opacity 0.5s;
     }
 
 }
