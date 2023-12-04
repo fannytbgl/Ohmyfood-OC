@@ -63,7 +63,7 @@ a {
 
 .small-title, .big-button, .restaurant-card .restaurant-card-sub h3, .fonctionnement-card .fonctionnement-card-content {
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .price {
@@ -479,7 +479,7 @@ a {
 
 .small-title, .big-button, .fonctionnement-card .fonctionnement-card-content, .restaurant-card .restaurant-card-sub h3 {
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .price {
@@ -617,7 +617,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  font-weight: medium;
+  font-weight: 500;
 }
 .footer-ohmyfood .footer-ul-official {
   display: flex;
@@ -669,7 +669,7 @@ a {
 
 .small-button {
   font-size: 14px;
-  font-weight: medium;
+  font-weight: 500;
   background: #99e2d0;
   color: #008766;
   padding: 5px 10px;
@@ -785,7 +785,7 @@ a {
 
 .small-title, .fonctionnement-card .fonctionnement-card-content, .restaurant-card .restaurant-card-sub h3, .big-button {
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .price {
