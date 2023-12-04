@@ -335,6 +335,14 @@ a {
     width: 500px;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1089px) {
+  .restaurants-cards .restaurant-card {
+    width: 460px;
+  }
+}
+
+
 /***** footer *****/
 .footer-ohmyfood {
   display: flex;
@@ -600,7 +608,7 @@ a {
 /**loader**/
 .loader-box {
   height: 100vh;
-  width: 50vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -642,7 +650,7 @@ a {
 @media (min-width: 768px) {
   .loader-box {
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
