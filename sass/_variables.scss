@@ -6,6 +6,7 @@ $tertiary-dark: #008766;
 $background: #f6f6f6;
 $grey: #353535;
 $icon: #7E7E7E;
+$location: #EAEAEA;
 
 /* drop-shadow */
 $button-dropshadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
@@ -95,7 +96,7 @@ $cards-dropshadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
 
   @keyframes unfilling {
-    
+
     from {
         fill: black;
     }

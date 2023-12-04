@@ -173,6 +173,27 @@ a {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+/***** location *****/
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #EAEAEA;
+  gap: 15px;
+  color: #353535;
+}
+.location .input-location {
+  font-size: 16px;
+  border: none;
+  background-color: #EAEAEA;
+  width: 115px;
+}
+.location .input-location::placeholder {
+  color: #353535;
+}
+
 /***** research & advertising *****/
 .research-and-advertising {
   display: flex;
