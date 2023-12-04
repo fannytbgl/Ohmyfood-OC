@@ -1,4 +1,4 @@
-/* General */
+/***** General *****/
 * {
     font-family: 'Roboto', sans-serif;
     padding: 0%;
@@ -31,41 +31,3 @@ a {
   color: inherit;
 }
 
-/* font-variables */
-.title {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.restaurant-cart-menu-title {
-  font-family: 'Shrikhand', serif;
-  font-size: 28px;
-  padding-right: 28px;
-}
-
-.footer-title {
-  font-family: 'Shrikhand', serif;
-  font-size: 18px;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.subcoment {
-  font-size: 17px;
-  font-weight: lighter;
-}
-
-.subcoment-cart {
-  font-size: 15px;
-  font-weight: lighter;
-}
-
-.small-title {
-  font-size: 18px;
-  font-weight: medium;
-}
-
-.price {
-  font-size: 15px;
-  font-weight: bold;
-}

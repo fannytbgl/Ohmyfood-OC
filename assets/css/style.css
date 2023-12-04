@@ -1,4 +1,4 @@
-/* General */
+/***** General *****/
 * {
   font-family: "Roboto", sans-serif;
   padding: 0%;
@@ -30,7 +30,9 @@ a {
   color: inherit;
 }
 
-/* font-variables */
+/***** color *****/
+/***** drop-shadow *****/
+/***** font-variables *****/
 .title, .fonctionnement-box .fonctionnement-title, .advertising .advertising-title {
   font-size: 24px;
   font-weight: bold;
@@ -69,9 +71,7 @@ a {
   font-weight: bold;
 }
 
-/* color */
-/* drop-shadow */
-/* animations */
+/***** animations *****/
 .fadein1 {
   animation: fade-in 1.5s ease-in-out forwards;
 }
@@ -149,30 +149,6 @@ a {
   }
 }
 
-/***** header *****/
-.header-ohmyfood {
-  height: 63px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 100%;
-}
-.header-ohmyfood .header-arrow {
-  font-size: 16px;
-  width: 5%;
-  margin-left: 5%;
-}
-.header-ohmyfood .logo-part {
-  width: 90%;
-  text-align: center;
-}
-.header-ohmyfood .logo, .header-ohmyfood .logo-restaurant {
-  width: 162px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
 /***** location *****/
 .location {
   display: flex;
@@ -364,67 +340,8 @@ a {
     width: 500px;
   }
 }
-/***** footer *****/
-.footer-ohmyfood {
-  display: flex;
-  flex-direction: column;
-  padding: 28px 0px;
-  gap: 7px;
-  color: white;
-  background-color: #353535;
-  width: 100%;
-  padding-left: 20px;
-}
-.footer-ohmyfood .footer-logo {
-  width: 95px;
-  margin-bottom: 13px;
-}
-.footer-ohmyfood .footer-logo svg {
-  fill: white;
-}
-.footer-ohmyfood .footer-ul-partnership {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  font-size: 16px;
-}
-.footer-ohmyfood .footer-ul-partnership .footer-ul-partnership-li {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  font-weight: medium;
-}
-.footer-ohmyfood .footer-ul-official {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-  font-weight: lighter;
-}
-.footer-ohmyfood .footer-icon {
-  font-size: 13px;
-}
-
-@media (min-width: 1024px) {
-  .footer-ohmyfood {
-    flex-direction: row-reverse;
-    padding-top: 60px;
-    padding-bottom: 25px;
-  }
-  .footer-ohmyfood .footer-ul-partnership {
-    flex-direction: row;
-    order: 2;
-    padding-right: 40px;
-  }
-  .footer-ohmyfood .footer-ul-official {
-    flex-direction: row;
-    order: 1;
-    padding-right: 80px;
-  }
-  .footer-ohmyfood .footer-title {
-    padding-right: 60px;
-  }
-}
-/***** restaurant cart banner *****/
+/***** restaurant cart *****/
+/** restaurant cart banner **/
 .restaurant-cart-banner {
   height: 275px;
   width: 100%;
@@ -433,7 +350,7 @@ a {
   position: relative;
 }
 
-/***** restaurant cart menu *****/
+/** restaurant cart menu **/
 .restaurant-cart-menu {
   display: flex;
   flex-direction: column;
@@ -529,9 +446,48 @@ a {
     width: 684px;
   }
 }
-/* color */
-/* drop-shadow */
-/* animations */
+/***** color *****/
+/***** drop-shadow *****/
+/***** font-variables *****/
+.title, .advertising .advertising-title, .fonctionnement-box .fonctionnement-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.restaurant-cart-menu-title {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  padding-right: 28px;
+}
+
+.footer-title {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subcoment, .advertising .advertising-paragraph, .restaurant-card .restaurant-card-sub p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.subcoment-cart {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.small-title, .big-button, .fonctionnement-card .fonctionnement-card-content, .restaurant-card .restaurant-card-sub h3 {
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/***** animations *****/
 .fadein1 {
   animation: fade-in 1.5s ease-in-out forwards;
 }
@@ -609,7 +565,91 @@ a {
   }
 }
 
-/** buttons **/
+/***** header *****/
+.header-ohmyfood {
+  height: 63px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+.header-ohmyfood .header-arrow {
+  font-size: 16px;
+  width: 5%;
+  margin-left: 5%;
+}
+.header-ohmyfood .logo-part {
+  width: 90%;
+  text-align: center;
+}
+.header-ohmyfood .logo, .header-ohmyfood .logo-restaurant {
+  width: 162px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/***** footer *****/
+.footer-ohmyfood {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0px;
+  gap: 7px;
+  color: white;
+  background-color: #353535;
+  width: 100%;
+  padding-left: 20px;
+}
+.footer-ohmyfood .footer-logo {
+  width: 95px;
+  margin-bottom: 13px;
+}
+.footer-ohmyfood .footer-logo svg {
+  fill: white;
+}
+.footer-ohmyfood .footer-ul-partnership {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 16px;
+}
+.footer-ohmyfood .footer-ul-partnership .footer-ul-partnership-li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-weight: medium;
+}
+.footer-ohmyfood .footer-ul-official {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: lighter;
+}
+.footer-ohmyfood .footer-icon {
+  font-size: 13px;
+}
+
+@media (min-width: 1024px) {
+  .footer-ohmyfood {
+    flex-direction: row-reverse;
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  .footer-ohmyfood .footer-ul-partnership {
+    flex-direction: row;
+    order: 2;
+    padding-right: 40px;
+  }
+  .footer-ohmyfood .footer-ul-official {
+    flex-direction: row;
+    order: 1;
+    padding-right: 80px;
+  }
+  .footer-ohmyfood .footer-title {
+    padding-right: 60px;
+  }
+}
+/***** buttons *****/
 .big-button {
   font-size: 16px;
   color: white;
@@ -637,7 +677,7 @@ a {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-/**loader**/
+/*****loader*****/
 .loader-box {
   height: 100vh;
   width: 100vw;
@@ -712,9 +752,48 @@ a {
     animation: spin 1s linear infinite;
   }
 }
-/* color */
-/* drop-shadow */
-/* animations */
+/***** color *****/
+/***** drop-shadow *****/
+/***** font-variables *****/
+.title, .advertising .advertising-title, .fonctionnement-box .fonctionnement-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.restaurant-cart-menu-title {
+  font-family: "Shrikhand", serif;
+  font-size: 28px;
+  padding-right: 28px;
+}
+
+.footer-title {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subcoment, .advertising .advertising-paragraph, .restaurant-card .restaurant-card-sub p {
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.subcoment-cart {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.small-title, .fonctionnement-card .fonctionnement-card-content, .restaurant-card .restaurant-card-sub h3, .big-button {
+  font-size: 18px;
+  font-weight: medium;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/***** animations *****/
 .fadein1 {
   animation: fade-in 1.5s ease-in-out forwards;
 }
